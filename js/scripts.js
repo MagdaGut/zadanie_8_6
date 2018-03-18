@@ -6,5 +6,10 @@ var	wynik = (a * a) - (2 * a * b) - (b * b);
 
 alert("Wynik (a * a) - (2 * a * b) - (b * b) wynosi " + wynik);
 
-var whatIsValue = wynik >= 0 ? "Wynik jest dodatni" : "Wynik jest ujemny";
-alert(whatIsValue);
+if (wynik > 0) {
+	alert("Wynik jest dodatni");
+} else if (wynik < 0) {
+	alert("Wynik jest ujemny");
+} else{
+	alert("Wynik jest zerowy");
+}
